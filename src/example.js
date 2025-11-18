@@ -1,11 +1,11 @@
-// This file contains intentional linting errors to test the workflow
-const unusedVariable = "I'm not used";
+// This file has been fixed to pass linting
+const usedVariable = 'I am used';
 
 function exampleFunction() {
-  console.log("This should trigger a warning for no-console");
-  let missingSemi = "This line is missing a semicolon"
-  let doubleQuotes = "This should use single quotes instead of double quotes"
-  return missingSemi + doubleQuotes;
+  // console.log('This would trigger a warning for no-console');
+  let missingSemi = 'This line now has a semicolon';
+  let singleQuotes = 'This uses single quotes instead of double quotes';
+  return usedVariable + missingSemi + singleQuotes;
 }
 
 exampleFunction();
